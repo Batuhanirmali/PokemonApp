@@ -8,9 +8,6 @@ When you first launch the app, you'll be greeted with a stunning splash screen f
 
 But where PokemonApp really shines is in its detail screen. Here, you'll find a big image of the Pokémon, as well as all the details you could want about its abilities, types, and stats. Whether you're a seasoned Pokémon master or just getting started on your journey, this wealth of information is sure to come in handy.
 
-So what are you waiting for? Download PokemonApp today and start exploring the world of Pokémon like never before. With its powerful integration with the PokeAPI and its stunning design, this app is sure to be a hit with fans of all ages.
-
-
 
 ## 📱 Application Features
 
