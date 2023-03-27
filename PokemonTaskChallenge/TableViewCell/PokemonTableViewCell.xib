@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="112" id="KGk-i7-Jjw" customClass="PokemonTableViewCell" customModule="PokemonTaskChallenge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="112"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="273.66666666666669" height="112"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dTl-x0-TsS">
+                        <rect key="frame" x="5" y="5" width="263.66666666666669" height="68"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="12e-vt-gfT">
+                                <rect key="frame" x="0.0" y="0.0" width="90" height="103"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="103" id="mDJ-ma-X49"/>
+                                    <constraint firstAttribute="width" constant="90" id="tSe-aZ-mqc"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alD-r2-T9h">
+                                <rect key="frame" x="112.99999999999999" y="20" width="142.66666666666663" height="28"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="alD-r2-T9h" firstAttribute="top" secondItem="dTl-x0-TsS" secondAttribute="top" constant="20" id="844-qk-q2u"/>
+                            <constraint firstAttribute="trailing" secondItem="alD-r2-T9h" secondAttribute="trailing" constant="8" id="OW8-1d-G7e"/>
+                            <constraint firstAttribute="bottom" secondItem="alD-r2-T9h" secondAttribute="bottom" constant="20" id="T7c-jj-5eb"/>
+                            <constraint firstItem="12e-vt-gfT" firstAttribute="leading" secondItem="dTl-x0-TsS" secondAttribute="leading" id="i7n-5Y-db0"/>
+                            <constraint firstItem="12e-vt-gfT" firstAttribute="top" secondItem="dTl-x0-TsS" secondAttribute="top" id="mJI-aQ-vZo"/>
+                            <constraint firstAttribute="bottom" secondItem="12e-vt-gfT" secondAttribute="bottom" id="vTN-MA-2wP"/>
+                            <constraint firstItem="alD-r2-T9h" firstAttribute="leading" secondItem="12e-vt-gfT" secondAttribute="trailing" constant="23" id="win-qg-rt7"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dTl-x0-TsS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="0ix-0i-zPU"/>
+                    <constraint firstAttribute="bottom" secondItem="dTl-x0-TsS" secondAttribute="bottom" constant="5" id="31i-nG-UWz"/>
+                    <constraint firstItem="dTl-x0-TsS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="goQ-yL-yqp"/>
+                    <constraint firstAttribute="trailing" secondItem="dTl-x0-TsS" secondAttribute="trailing" constant="5" id="y43-PA-0PD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="nameLabel" destination="alD-r2-T9h" id="frR-EQ-YfG"/>
+                <outlet property="pokemonImageView" destination="12e-vt-gfT" id="ZFk-YW-BOH"/>
+            </connections>
+            <point key="canvasLocation" x="-30.534351145038165" y="11.267605633802818"/>
+        </tableViewCell>
+    </objects>
+</document>
